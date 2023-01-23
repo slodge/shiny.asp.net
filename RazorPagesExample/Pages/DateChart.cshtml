@@ -1,0 +1,19 @@
+﻿@page
+@model DateChartModel
+@{
+    ViewData["Title"] = "A Date with Shiny";
+}
+
+@using RazorPagesExample.Shiny.HtmlExtensions
+
+<div class="text-center">
+    <h1 class="display-4">Shiny(ish)</h1>
+    <p>@Html.ShinyDateRangeInput("mainDateRange", "Hello", DateTime.Today.AddDays(-365), DateTime.Today)</p>
+    <p>
+        Date value:
+        @Html.VerbatimTextOutput("dateText")
+    </p>
+    <p>
+        @Html.ShinyPlotOutput("datePlot")
+    </p>
+</div>

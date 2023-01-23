@@ -1,0 +1,15 @@
+﻿@page
+@model ButtonModel
+@{
+    ViewData["Title"] = "Button page";
+}
+
+@using RazorPagesExample.Shiny.HtmlExtensions
+
+<div class="text-center">
+    <h1 class="display-4">Button Pressing</h1>
+    <p>@Html.ShinyActionButtonInput("mainButton", "Press Me")</p>
+    <p>
+        @Html.VerbatimTextOutput("buttonText")
+    </p>
+</div>
