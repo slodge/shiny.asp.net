@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'ShinyAspNet'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B913A6900841428BBD17A3B948AA84A5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_40865B71EA544577A408B974733892EE }}
           package: .
